@@ -1,38 +1,100 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@100&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.container{
+  padding:0 12.8rem;
+}
+
+input:focus{
+  outline: none;
+}
+
+body{
+  background-color: rgb(250,250,250);
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  background-color: rgb(255,255,255);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color:  rgb(219, 219, 219);
+  height: 55px;
+}
+
+.navbar{
+  display: flex;
+  padding: 1rem 0 .4rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo{
+  padding-right: 8rem;
+}
+
+
+.search-input{
+  margin:0;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 215px;
+  padding: 10px;
+  border-color: rgba(128, 128, 128, 0.123);
+  border-width: 1px;
+  border-radius: 2px;
+  background-color: rgba(212, 212, 212, 0.123);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar__list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  margin-bottom: 5px;
+}
+.navbar__link{
+  margin-left:1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.profile__user{
+  margin-top: 2rem;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile__img{
+  width: 250px;
+  margin-left: 80px;
+  height: 150px;
+}
+
+.user-avatar{
+  border-radius: 50%;
+  height: 150px;
+}
+
+.profile__username{
+  font-size: 1.5rem;
+  color: rgb(80, 80, 80);
+  font-weight:100;
+}
+
+.feed{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+}
+
+.feed__item{
+  width: 300px;
+}
+.feed-img{
+  width: 300px;
+  height: 300px;
 }
