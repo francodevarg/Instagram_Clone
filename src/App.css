@@ -64,24 +64,117 @@ header{
 
 .profile__user{
   margin-top: 2rem;
+}
+
+.profile__data{
   display: flex;
+  width: 100%;
 }
 
-.profile__img{
-  width: 250px;
-  margin-left: 80px;
-  height: 150px;
-}
-
-.user-avatar{
+.profile__dataAvatar{
   border-radius: 50%;
+  width: 150px;
   height: 150px;
+  margin-left: 80px;
 }
 
-.profile__username{
+.profile__dataAvatar:hover{
+  cursor: pointer;
+}
+
+.profile__dataMetrics{
+  margin-left: 100px;
+  height: min-content;  
+}
+
+.profile__userName{
   font-size: 1.5rem;
-  color: rgb(80, 80, 80);
+  color: #505050;
   font-weight:100;
+  display: inline-block;
+}
+
+.btn-follow{
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.btn-sm{
+  font-size:  .8rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: 1px solid #0095f6;
+  border-radius: 5px;
+  background-color: #0095f6;
+  color: white;
+}
+.btn-sm:hover{
+  cursor: pointer;
+}
+
+.user{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.metricsList{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.metrics__item{
+  list-style: none;
+  margin-right: 50px;
+}
+
+.metrics__action{
+  color: #505050;
+  text-decoration: none;
+}
+
+.metrics__number{
+  color: #000000;
+  font-weight: bold;
+}
+
+.profile__description{
+  margin-top: 25px;
+}
+.storiesCarousel{
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px 0 40px 0;
+}
+
+.stories__item{
+  margin-left: 30px;
+  width: 102px;
+  height: 102px;
+  border: 1px solid rgba(144, 144, 144, 0.226);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories__item >img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+
+}
+
+.stories_description{
+  padding-top: 5px;
+  font-size: .8rem;
+  font-weight: bold;
+  color:black;
 }
 
 .feed{
